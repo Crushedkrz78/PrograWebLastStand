@@ -1,0 +1,27 @@
+/*Hoja de estilos para la práctica 1 de Programación Web*/
+h1{
+  font-style: italic;
+  font-size: 100px;
+  color: magenta;
+}
+h2{
+  font-size:30px;
+}
+#saludo{
+  font-size: 50px;
+}
+.titulo{
+  font-style: normal;
+}
+.azul{
+  color: blue;
+}
+.rojo{
+  color: red;
+}
+.verde{
+  color: green;
+}
+cian{
+  color: cyan;
+}

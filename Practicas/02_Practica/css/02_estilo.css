@@ -6,6 +6,7 @@ body{
   font-size: 1em;
   line-height: 1.4px;
   font: 16px Helvetica;
+  font-family: 'Fredoka One', cursive;
 }
 hr{
   display: block;
@@ -35,8 +36,30 @@ margin: Height & Width;
 .main aside{
   background: #f16524;
 }
+/*
 .title{
   color: white;
+  text-shadow:7px 7px 7px #000000;/*Sombra para textos
+}
+*/
+.title {
+  color: white;
+  text-shadow:7px 7px 7px #000000;/*Sombra para textos*/
+-webkit-animation: cssAnimation 0.9236s 16 ease;
+-moz-animation: cssAnimation 0.9236s 16 ease;
+-o-animation: cssAnimation 0.9236s 16 ease;
+}
+@-webkit-keyframes cssAnimation {
+from { -webkit-transform: rotate(360deg) scale(0.555) skew(-2deg) translate(1px); }
+to { -webkit-transform: rotate(360deg) scale(0.839) skew(-2deg) translate(1px); }
+}
+@-moz-keyframes cssAnimation {
+from { -moz-transform: rotate(360deg) scale(0.555) skew(-2deg) translate(1px); }
+to { -moz-transform: rotate(360deg) scale(0.839) skew(-2deg) translate(1px); }
+}
+@-o-keyframes cssAnimation {
+from { -o-transform: rotate(360deg) scale(0.555) skew(-2deg) translate(1px); }
+to { -o-transform: rotate(360deg) scale(0.839) skew(-2deg) translate(1px); }
 }
 nav ul{
   margin; 0;
@@ -80,6 +103,11 @@ clearfix:after{
 @media only screen and (min-width: 480px){
   h1{
     color: red;
+    font-family: 'Poiret One', cursive;
+  }
+  .title{
+    color: red;
+    font-family: 'Poiret One', cursive;
   }
   nav a{
     float: left;
@@ -102,6 +130,7 @@ clearfix:after{
   .title{
     float: left;
     color: #333;
+    font-family: 'Audiowide', cursive;
   }
   nav{
     float: right;

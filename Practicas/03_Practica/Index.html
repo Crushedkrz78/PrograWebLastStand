@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <!--<title>Bootstrap 101 Template</title>-->
+    <title>Practica 3</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -19,45 +20,143 @@
   </head>
   <body>
     <h1>Hello, world!</h1>
-
+    <h1><small>Little World now</small></h1>
+    <!--Uso del Jumbotron para llamar la atención -->
+    <div class="jumbotron">
+      <h1>Jumbotron is looking for you</h1>
+      <p><a class="btn btn-primary btn-lg"
+        href="http://getbootstrap.com/components/"
+        role="button">Enlace a un lugar desconocido</a></p>
+    </div>
+    <!--Fin del uso del Jumbotron para llamar la atención -->
     <div class="container">
 
       <div class="row"><!--Fila 1-->
-
+        <!--Este div mide 6/12 unidades en esta fila-->
         <div class="col-md-6">
-          <!--Columa 1-->
-        </div>
-        <div class="col-md-6">
-          <!--Columa 2-->
+          <!--Columa 1: Usando Nav-Tabs-->
+          <p>Header</p>
+          <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">Tu hogar</a></li>
+            <li role="presentation"><a href="#">Tu perfil</a></li>
+            <!-- Insignias/badges -->
+            <li><a href="#">Mensajes: <span class="badge">(0)</span></a></li>
+            <button class="btn btn-primary" type="button">
+              Correos <span class="badge">Muchos(999+)</span>
+            </button>
+            <!-- Fin de Insignias/badges -->
+          </ul>
         </div>
 
-      </div>
+        <!--Este div mide 6/12 unidades en esta fila-->
+        <div class="col-md-6">
+          <!--Columa 2: Usando listas desplegables <<dropup>>-->
+          <p>Header 2</p>
+          <div class="dropup">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropup
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <li><a href="#">Hasta arriba</a></li>
+              <li><a href="#">No tan arriba</a></li>
+              <li><a href="#">Ligeramente arriba</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Este enlace parece importante</a></li>
+            </ul>
+          </div>
+        </div>
+      </div><!--Fin de la fila 1-->
 
       <div class="row"><!--Fila 2-->
-
+        <!--Este div mide 3/12 unidades en esta fila-->
         <div class="col-md-3">
-          <!--Columa 1-->
-          <p>Header</p>
-        </div>
-        <div class="col-md-9">
-          <!--Columa 2-->
-          <p>Menu</p>
+          <!--Columa 1: Usando botones con iconos-->
+          <p>Another Header</p>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-fast-backward" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-fast-forward" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-eject" aria-hidden="true"></span>
+          </button>
+
         </div>
 
-      </div>
+        <!--Este div mide 9/12 unidades en esta fila-->
+        <div class="col-md-9">
+          <!--Columa 2: Usando...-->
+          <p>Article</p>
+          <!-- Inicio de las miniaturas -->
+              <div class="row">
+                <div class="col-xs-6 col-md-3">
+                  <a href="#" class="thumbnail">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Original_Doge_meme.jpg" alt="...">
+                  </a>
+                </div>
+              </div>
+              <!-- Fin de las miniaturas -->
+
+              <!-- Media object -->
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="https://upload.wikimedia.org/wikipedia/en/5/5f/Original_Doge_meme.jpg" alt="...">
+                  </a>
+
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">Such text</h4>
+                  Wow
+                  <br><br>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+        </div>
+      </div><!--Fin de la fila 2-->
 
       <div class="row"><!--Fila 3-->
-
+        <!--Este div mide 6/12 unidades en esta fila-->
         <div class="col-md-6">
-          <!--Columa 1-->
-          <p>Article</p>
+          <!--Columa 1: Usando...-->
+          <p>Article 2</p>
+          <div class="list-group">
+            <a href="#" class="list-group-item disabled">
+              This is not OK, trust me, you don't want to enter here
+            </a>
+            <a href="#" class="list-group-item">It's OK</a>
+            <a href="#" class="list-group-item">It's OK too</a>
+            <a href="#" class="list-group-item">Another one it's OK</a>
+            <a href="#" class="list-group-item">Here we go dude, it's OK</a>
+          </div>
         </div>
+
+        <!--Este div mide 6/12 unidades en esta fila-->
         <div class="col-md-6">
-          <!--Columa 2-->
+          <!--Columa 2: Usando...-->
           <p>Aside</p>
-        </div>
+          <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CAFrbFME-rc" allowfullscreen></iframe>
+          </div>
 
-      </div>
+      </div><!--Fin de la fila 3-->
+
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -12,32 +12,71 @@
     
     <!-- The next code emulates GUI from Youtube-->
     <body>
-        <div class="continer"><!--Main Container-->
+        <div class="continer"><!--Main Container--> 
             <div class="row"><!--Top of home site-->
-                <div class="col-md-3"><!--Youtube Logo and Menu Hamburguer button-->
-                    <div class="row"><!--Top Blank Space Row-->
-                        <div class="col-md-12"></div>
-                    </div>
+                <div class="col-md-2"><!--Youtube Logo and Menu Hamburguer button-->
                     <div class="row"><!--Middle Row-->
-                        <div class="col-md-2"><!--Left Blank Space Column-->
+                        
+                        <div class="col-md-1"><!--Left Blank Space Column-->
                         </div>
                         <div class="col-md-2"><!--Menu Button Column-->
-                            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                            <nav class="navbar navbar-default">
+                                <div class="container-fluid">
+                                    <div class="navbar-header">
+                                        <a class="navbar-brand" href="#">
+                                            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </nav>
                         </div>
-                        <div class="col-md-2"><!--Youtube Logo Column-->
-                            <img src="img/YouTube-logo-full_color.png" alt="Home" width="90">
+                        <div class="col-md-9"><!--Youtube Logo Column-->
+                            <nav class="navbar navbar-default">
+                                <div class="container-fluid">
+                                    <div class="navbar-header">
+                                        <a class="navbar-brand" href="#">
+                                            <img src="img/YouTube-logo-full_color.png" alt="Home" width="90">
+                                        </a>
+                                    </div>
+                                </div>
+                            </nav>                                                                                
                         </div>
-                    </div>
-                    <div class="row"><!--Bottom Blank Space Row-->
-                        <div class="col-md-12"></div>
                     </div>
                 </div><!--End off Logo and Menu button-->
-                <div class="col-md-9"><!--Search bar and User Options Buttons-->
+                <div class="col-md-10"><!--Search bar and User Options Buttons-->
+                    <div class="row">
+                        <div class="col-md-9"><!--Searchbar-->
+                            <form class="navbar-form navbar-left" role="search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">
+                                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                        </button>
+                                    </span>
+                                </div>                                   
+                            </form>
+                        </div><!--End of Searchbar-->
+                        <div class="col-md-3"><!--User Options-->
+                            <div class="btn-group" role="group" aria-lbel="...">
+                                <button type="button" class="btn btn-default"><!--Upload Button-->
+                                    <span class="glyphicon glyphicon-upload"></span>
+                                </button><!--End of Upload Button-->
+                                <button type="button" class="btn btn-default"><!--Notifications Button-->
+                                    <span class="glyphicon glyphicon-bell"></span>
+                                </button><!--End of Notifications Button-->
+                                <button type="button" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                </button><!--Profile Button-->
+                            </div>
+                        </div><!--End of User Options-->
+                    </div>
                 </div><!--End of Search Bar and User Options Buttons-->
             </div><!--End off Top of Home Site-->
             
             <div class="row"><!--Menu and Content Row-->
                 <div class="col-md-3"><!--Menu Column-->
+                    
                 </div><!--End of Menu Column-->
                 <div class="col-md-9"><!--Content Column-->
                 </div><!--End of Content Column-->

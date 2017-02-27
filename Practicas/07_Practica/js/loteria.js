@@ -6,8 +6,8 @@ $(document).ready(
         $("img").click(
             function() {
                 //$(this).width("20px"); //Reduces width of the clicked img
-                //$(this).hide("slow");
-                $(this).attr('src','img/cards/'+'01'+'.jpg');
+                $(this).hide("slow");
+                //$(this).attr('src','img/cards/'+'01'+'.jpg');
             }
         );
         

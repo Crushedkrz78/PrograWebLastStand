@@ -1,0 +1,17 @@
+.content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#nav-01 {
+    width: 100%;
+    margin: auto;
+}
+.carousel-inner .item img,
+.carousel-inner .item a img {
+    margin: auto;
+}
+
+img {
+    margin: auto;
+}

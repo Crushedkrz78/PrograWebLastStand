@@ -1,45 +1,151 @@
 $(document).ready(
     function() {
-        console.log("Greetings form jQuery");
+        console.log("Greetings from jQuery");
         //alert("Greetings from jQuery");
-        
-        $("img").click(
-            function() {
-                //$(this).width("20px"); //Reduces width of the clicked img
-                //$(this).hide("slow");
-                //$(this).attr('src','img/cards/'+'01'+'.jpg');
-                $(this).css("filter", "grayscale(100%)");
-                var img_id = this.id;
-            }
-        );
-
-        $("#btn-restart").click(
-            function() {
-                $("img").show("fast");
-            }
-        );
+        $("img").hide("fast");
+        $("#main").show("fast");
         
         /*
         The next code block randomly changes the top image displayed from the 
         available
         */
-        var sort = [0,1,2,3,4,5,6,7,8,9];
         
-        setInterval(
+        
+        
+        /*
+        The next button function restarts all the game when finished, creates new tab and a new random deck
+        */
+        $("#btn-restart").click(
+            //The next function creates the new random 10 cards deck
             function() {
-                var rand = Math.floor((Math.random() * 10));
-                if(sort[rand]){
-                    $("#main").attr("src", "img/cards/" + rand + ".jpg");
-                    $("#"+rand).css("filter", "grayscale(100%)");
-                    sort[rand]= false;
+                $("img").hide("fast");
+                
+                $("#main").attr("src", "img/cards/1.jpg");
+                $("#main").show("fast");
+                //clearInterval(griton);
+                //console.log("Longitud tablero: " + tablero.length);
+                
+                //$("img").show("fast");
+            }
+        );//End of restart button actions
+        
+        
+        //The next button function starts the game, with the previous created tab and deck
+        $("#btn-start").click(
+            
+            function() {
+                var baraja = new Array(54);
+                var tablero = new Array(9);
+                var validate = new Array(9);
+                for (i = 0; i < baraja.length ; i++) {
+                    var rand = Math.floor(Math.random() * 53) + 2;
+                    for (j = 0; j <= i; j++) {
+                        if (baraja[j] == null) {
+                            baraja[j] = rand;
+                        }
+                        else {
+                            if(baraja[j] == rand ) {
+                                rand = Math.floor(Math.random() * 53) + 2;
+                                j = 0;
+                            }
+                        }
+                    }
                 }
-            }, 1000
-        );
-        
-        //The next function checks if all elements of aray are false
-        
-        
+                
+                for (i = 0; i < tablero.length ; i++) {
+                    var rand = Math.floor(Math.random() * 53) + 2;
+                    for (j = 0; j <= i; j++) {
+                        if (tablero[j] == null) {
+                            tablero[j] = rand;
+                            validate[j] = false;
+                            $("#"+i).attr("src", "img/cards/" + rand + ".jpg");
+                            $("#" + i).css("filter", "none");
+                        }
+                        else {
+                            if(tablero[j] == rand ) {
+                                rand = Math.floor(Math.random() * 53) + 2;//All Randoms except card 1
+                                j = 0;
+                            }
+                        }
+                    }
+                }
+                $("img").show("fast");
+                //setInterval sets an interval for execution of an specific function once in the interval
+                //console.log("Longitud baraja: " + baraja.length);
+                var index = 0;
+                var griton = setInterval( run, 1000 );
+                
+                //The function run() is used only for the setInterval() function
+                //it displays the card for the griton 
+                function run() {
+                    
+                    
+                    if (index == (baraja.length)) {
+                        evaluate();
+                        //clearInterval(griton);
+                    }
+                    else {
+                        //console.log("Indice: " + index + " Carta No: " + baraja[index]);   
+                        var img = baraja[index];
+                        $("#main").attr("src", "img/cards/" + img + ".jpg");
+                        for (i = 0; i< validate.length; i++) {
+                            if(img == tablero[i]) {
+                                $("#" + i).css("filter", "grayscale(100%)");
+                                validate[i] = true;
+                            }
+                        }
+                        //Validates the status of tablero
+                        evaluate();
+                        console.log(index);
+                        index ++;
+                    }
+                }//End of run()
+                
+                function win() {
+                    console.log("Has ganado");
+                }//End of win() function
+                
+                function lose () {
+                    console.log("Has perdido");
+                }//End of lose() function
+                
+                function evaluate() {
+                    var status = true;
+                    if (validate[0]) {
+                        if (validate[1]) {
+                            if (validate[2]) {
+                                if (validate[3]) {
+                                    if (validate[4]){
+                                        if (validate[5]){
+                                            if (validate[6]){
+                                                if (validate[7]){
+                                                    if (validate[8]){
+                                                        win();
+                                                        clearInterval(griton);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    for (i=0; i<validate.length; i++) {
+                        if (!validate[i]) {
+                            //Continua
+                            if(index == (baraja.length - 1)){
+                                lose();
+                                clearInterval(griton);
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        );//End of start button actions
     }
     
     
 ); //Document Selector, this time we are selecting to jQuery element
+

@@ -19,7 +19,8 @@ $(document).ready(
             //The next function creates the new random 10 cards deck
             function() {
                 $("img").hide("fast");
-                
+                $("#msg").attr("class", "");
+                $("Strong").text("");
                 $("#main").attr("src", "img/cards/1.jpg");
                 $("#main").show("fast");
                 //clearInterval(griton);
@@ -34,7 +35,9 @@ $(document).ready(
         $("#btn-start").click(
             
             function() {
-                var baraja = new Array(54);
+                $("#msg").attr("class", "");
+                $("Strong").text("");
+                var baraja = new Array(30);
                 var tablero = new Array(9);
                 var validate = new Array(9);
                 for (i = 0; i < baraja.length ; i++) {
@@ -103,10 +106,14 @@ $(document).ready(
                 
                 function win() {
                     console.log("Has ganado");
+                    $("#msg").attr("class", "alert alert-success");
+                    $("Strong").text("¡Has ganado!");
                 }//End of win() function
                 
                 function lose () {
                     console.log("Has perdido");
+                    $("#msg").attr("class", "alert alert-danger");
+                    $("Strong").text("Has perdido...");
                 }//End of lose() function
                 
                 function evaluate() {
@@ -121,7 +128,7 @@ $(document).ready(
                                                 if (validate[7]){
                                                     if (validate[8]){
                                                         win();
-                                                        clearInterval(griton);
+                                                        clearInterval(griton);//At this point you are the master of Loteria
                                                     }
                                                 }
                                             }

@@ -5,10 +5,7 @@ $(document).ready(
         $("img").hide("fast");
         $("#main").show("fast");
         
-        /*
-        The next code block randomly changes the top image displayed from the 
-        available
-        */
+        
         
         
         
@@ -23,10 +20,6 @@ $(document).ready(
                 $("Strong").text("");
                 $("#main").attr("src", "img/cards/1.jpg");
                 $("#main").show("fast");
-                //clearInterval(griton);
-                //console.log("Longitud tablero: " + tablero.length);
-                
-                //$("img").show("fast");
             }
         );//End of restart button actions
         
@@ -37,7 +30,7 @@ $(document).ready(
             function() {
                 $("#msg").attr("class", "");
                 $("Strong").text("");
-                var baraja = new Array(30);
+                var baraja = new Array(54);
                 var tablero = new Array(9);
                 var validate = new Array(9);
                 for (i = 0; i < baraja.length ; i++) {
@@ -85,10 +78,8 @@ $(document).ready(
                     
                     if (index == (baraja.length)) {
                         evaluate();
-                        //clearInterval(griton);
                     }
-                    else {
-                        //console.log("Indice: " + index + " Carta No: " + baraja[index]);   
+                    else { 
                         var img = baraja[index];
                         $("#main").attr("src", "img/cards/" + img + ".jpg");
                         for (i = 0; i< validate.length; i++) {

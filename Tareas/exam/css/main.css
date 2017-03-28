@@ -1,0 +1,31 @@
+/*Setting up the panel colors*/
+#pink{
+    background-color: #FF0080;
+    padding: 20px 0;
+}
+#yellow{
+    background-color: #FFFF00;
+    padding: 20px 0;
+}
+#blue{
+    background-color: #0080CC;
+    padding: 75px 0;
+}
+#gray{
+    background-color: #6E6E6E;
+    padding: 175px 0;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (min-width: 480px) {
+    /*  Esto se aplica a pantallas más anchas de 480 pixeles  */   
+}
+@media only screen and (min-width: 768px) {
+    /*  Esto se aplica a pantallas más anchas de 768 pixeles  */
+}
+@media only screen and (min-width: 1140px) {
+    /*  Esto se aplica a pantallas más anchas de 1140 pixeles  */
+    
+}

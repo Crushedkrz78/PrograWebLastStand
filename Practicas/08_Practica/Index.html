@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Formularios</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link rel="icon" href="img/LoterIcon.png"> <!--Little Tab Icon for Web Browser-->
+    </head>
+    <body>
+        <div class="main-container"><!--Main container all elements are here, ALL-->
+            <div class="main container clearfix">
+                <div class="header-container">
+                    <div class="jumbotron"><!--Título de la página-->
+                        <h1 class="title">Formularios</h1>
+                    </div>
+                </div>
+                
+                <div class="container-fluid"> <!--Example 1: Basic Forms-->
+                    <div class="header-container">
+                        <h1>Formularios básicos</h1>
+                    </div>
+                    <form><!---Formulario 1: Ejemplos de formularios básicos-->
+                        <div class="form-group">
+                            <label for="EmailExample">Email</label>
+                            <input type="email" class="form-control" id="EmailInputExample1" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="PasswordExample">Password</label>
+                            <input type="password" class="form-control" id="PasswordInputExample1" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="PasswordExample">File Upload</label>
+                            <input type="file" id="FileInputExample1">
+                            <p class="help-block">5MB Max File Size</p>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Check me
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Don't check me
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-default">I read all terms</button>
+                    </form>
+                </div><!--End of Example 1-->
+                
+                <div class="container-fluid"><!--Example 2: Inline Forms-->
+                    <div class="header-container">
+                        <h1>Inline Forms</h1>
+                    </div>
+                    
+                    <div class="container">
+                        <form class="form-inline"> <!--Form 1: Basic Inline Form-->
+                            <div class="form-group">
+                                <label for="NameInputExample2">Name</label>
+                                <input type="text" class="form-control" id="NameInputExample2" placeholder="Cris">
+                            </div>
+                            <div class="form-group">
+                                <label for="EmailInputExample2">Email</label>
+                                <input type="email" class="form-control" id="EmailInputExample2" placeholder="12030812@itcelaya.edu.mx" required/>
+                            </div>
+                            <button type="submit" class="btn btn-default">Invitar</button>
+                        </form><!--End of Form 1-->
+                    </div>
+                    
+                    <div class="container">
+                        <form class="form-inline"><!--Form 2: Inline Form w/Remember Checkbutton-->
+                            <div class="form-group">
+                                <label class="sr-only" for="EmailInputExample3">Email Address</label>
+                                <input type="email" class="form-control" id="EmailInputExample3" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="PasswordInputExample3">Password</label>
+                                <input type="password" class="form-control" id="PasswordInputExample3" placeholder="Password">
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-default">Sign in</button>
+                        </form><!--End of Form 2-->
+                    </div>
+                    
+                    <div class="container">
+                        <form class="form-inline"><!--Form 3: Inline for Amounts Forms-->
+                            <div class="form-group">
+                                <label class="sr-only" for="AmountInputExample">Amount (US Dollar)</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon">$</div>
+                                    <input type="text" class="form-control" id="AmountInputExample" placeholder="Amount">
+                                    <div class="input-group-addon">.00</div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-prmary">Transfer Cash</button>
+                        </form><!--End of Form 3-->
+                    </div>
+                </div><!--End of Example 2-->
+                
+                <div class="main-container"><!--Example 3: Horzontal Forms-->
+                </div><!--End of Example 3-->
+            </div>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,21 +1,17 @@
-#ejem1, #ejem2, #ejem3, #ejem4, #ejem5, #ejem6, #ejem7, #ejem8, #ejem9, #ejem10, #ejem11{
-    color: black;
-    background-color: white;
-}
-
 body{
-    background-color: darkslategrey;
+    background-color: azure;
     font-family: "Comic Sans MS";
 }
 
 .jumbotron{
-    background-color: skyblue;
+    background-color: #C4FAF8;
     font-family: "Times New Roman";
     text-align: center;
 }
-
-#focus{
-    -moz-box-shadow:  10px 10px 5px #6e6799;
-    -webkit-box-shadow: 10px 10px 5px #6e6799;
-    box-shadow: 10px 10px 5px #6e6799;
+.container-fluid{
+    background-color: #AFF8DB;
 }
+.header-container{
+    background-color: #BFF9EB;
+}
+

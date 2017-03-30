@@ -9,7 +9,7 @@
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
-        <link rel="icon" href="img/LoterIcon.png"> <!--Little Tab Icon for Web Browser-->
+        <link href="css/custom.css" rel="stylesheet">
     </head>
     <body>
         <div class="main-container"><!--Main container all elements are here, ALL-->
@@ -105,8 +105,405 @@
                     </div>
                 </div><!--End of Example 2-->
                 
-                <div class="main-container"><!--Example 3: Horzontal Forms-->
+                <div class="container-fluid"><!--Example 3: Horzontal Forms-->
+                    <div class="header-container">
+                        <h1>Horizontal Forms</h1>
+                    </div>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="EmailInputExample3" class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="EmailInputExample3" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="PasswordInputExample3" class="col-sm-2 control-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="PasswordInputExample3" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">Sign In</button>
+                            </div>
+                        </div>
+                    </form>
                 </div><!--End of Example 3-->
+                
+                <div class="container-fluid"><!--Example 4: Supported Controls-->
+                    <div class="header-container">
+                        <h1>Supported Controls</h1>
+                    </div>
+                    <label>Input</label><!--Text Input-->
+                    <input type="text" class="form-control" placeholder="Text Input">
+                    <label>Text Area</label><!--Text Area-->
+                    <textarea class="form-control" rows="3" placeholder="Text Area, Write Now!"></textarea>
+                    <label>Checkboxes and Radios</label><!--Checkbox and Radiobutton-->
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value=""> Option One
+                        </label>
+                    </div>
+                    <div class="checkbox disabled">
+                        <label>
+                            <input type="checkbox" value="" disabled> Option Two
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> Option One
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> Option Two
+                        </label>
+                    </div>
+                    <div class="radio disabled">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"> Option Three
+                        </label>
+                    </div>
+                    <label>Inline Checkbox and Radio</label><!--Inline Checkbox and Radiobutton-->
+                    <div class="container-fluid">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="CheckboxInline1" value="option1"> 1
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="CheckboxInline2" value="option2"> 2
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="CheckboxInline3" value="option3"> 3
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="InputRadioOptions" id="RadioInline1" values="option1"> 1
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="InputRadioOptions" id="RadioInline2" values="option1"> 2
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="InputRadioOptions" id="RadioInline3" values="option1"> 3
+                        </label>
+                    </div>
+                    <label>Checkbox and Radio without text tag</label><!--Checkbox and Radio without text tag-->
+                    <div class="container-fluid">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                            </label>
+                        </div>
+                    </div>
+                    <label>Selects</label>
+                    <br><label>Simple Selects</label>
+                    <div class="container-fluid">
+                        <select class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <label>Multiple Select</label>
+                    <div class="container-fluid">
+                        <select multiple class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div><!--End of Example 4-->
+                
+                <div class="container-fluid"><!--Example 5: Static Control-->
+                    <div class="header-container">
+                        <h1>Static Control</h1>
+                    </div>
+                    <form class="form-horizontal"><!--Form 1: Horizontal Style-->
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                <p class="form-control-static">email@example.com</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="inputPassword" class="col-sm-2 control-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                            </div>
+                        </div>
+                    </form>
+                    <form class="form-inline"><!--Form 2: Inline Style-->
+                        <div class="form-group">
+                            <label class="sr-only">Email</label>
+                            <p class="form-control-static">email@example.com</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword2" class="sr-only">Password</label>
+                            <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-default">Confirm Identity</button>
+                    </form>
+                </div><!--End of Example 5-->
+                
+                <div class="container-fluid"><!--Example 6: Focus state-->
+                    
+                </div><!--End of Example 6-->
+                
+                <div class="container-fluid"><!--Example 7: Focus Disabled-->
+                    <div class="header-container">
+                        <h1>Focus Disabled State</h1>
+                    </div>
+                    <div class="container"><!--Simple Input Disabled-->
+                        <h2>Simple Input Disabled</h2>
+                        <input class="form-control" id="disabledInput" type="text" placeholder="Disabled Input here..." disabled>
+                    </div>
+                    <div class="container-fluid"><!--Fields Disabled-->
+                        <h2>Fields Disabled</h2>
+                        <form>
+                            <fieldset disabled>
+                                <div class="form-group">
+                                    <label for="disabledTextInput">Disabled Input</label>
+                                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled Input">
+                                </div>
+                                <div class="form-group">
+                                    <label for="disabledSelect">Disabled Select Menu</label>
+                                    <select id="disabledSelect" class="form-control">
+                                        <option>Disabled Select</option>
+                                    </select>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">You Can't Touch this
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div><!--End of Example 7-->
+                
+                <div class="container-fluid"><!--Example 8: Read Only State-->
+                    <div class="header-container">
+                        <h1>Read Only state</h1>
+                    </div>
+                    <div class="container-fluid">
+                        <input class="form-control" type="text" placeholder="Read Only Input Here..." readonly>
+                    </div>
+                </div><!--End of Example 8-->
+                
+                <div class="container-fluid"><!--Example 9: Help Text-->
+                    <div class="header-container">
+                        <h1>Help Text</h1>
+                    </div>
+                    <div class="container-fluid">
+                        <label>Input With Helpo Text</label>
+                        <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
+                        <span id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                    </div>
+                </div><!--End of Example 9-->
+                
+                <div class="container-fluid"><!--Example 10: Validation States-->
+                    <div class="header-container">
+                        <h1>Validation States</h1>
+                    </div>
+                    <div class="container-fluid">
+                        <label>Simple Validation</label>
+                        <div class="container-fluid">
+                            <div class="form-group has-success">
+                                <label class="control-label" for="inputSuccess1">Input With Success</label>
+                                <input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2">
+                                <span id="helpBlock2" class="help-block">A block of help text that breaks onto a new line and may extend beyond on line.</span>
+                            </div>
+                            <div class="form-group has-warning">
+                                <label class="control-label" for="inputWarning1">Input With Warning</label>
+                                <input type="text" class="form-control" id="inputWarning1">
+                            </div>
+                            <div class="form-group has-error">
+                                <label class="control-label" for="inputError1">Input With Error</label>
+                                <input type="text" class="form-control" id="inputError1">
+                            </div>
+                            <div class="has-success">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" id="checkboxSuccess" value="option1"> Checkbox With Success
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="has-warning">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" id="checkboxWarning" value="option1"> Checkbox With Warning
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="has-error">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" id="checkboxError" value="option1"> Checkbox With Error
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <label>Optional Icons Validation</label>
+                        <div class="container-fluid">
+                            <div class="form-group has-success has-feedback">
+                                <label class="control-label" for="inputSuccess2">Input With Success</label>
+                                <input type="text" class="fomr-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span id="inputSuccess2Status" class="sr-only">(Success)</span>
+                            </div>
+                            <div class="form-group has-warning has-feedback">
+                                <label class="contro-label" for="inputWarning2">Input With Warning</label>
+                                <input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
+                                <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                                <span id="inputError2Status" class="sr-only">(Error)</span>
+                            </div>
+                            <div class="form-group has-success has-feedback">
+                                <label class="control-label" for="inputGroupSuccess1">Input group with success</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon">@</span>
+                                    <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+                                </div>
+                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span id="inputGroupSuccess1Status" class="sr-only">(Success)</span>
+                            </div>
+                        </div>
+                        <label>Optional Icons for Horizontal and Inline</label>
+                        <div class="container-fluid">
+                            <form class="form-horizontal">
+                                <div class="form-group has-success has-feedback">
+                                    <label class="control-label col-sm-3" for="inputSuccess3">Input with Success</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
+                                        <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                        <span id="inputSuccess3Status" class="sr-only">(Success)</span>
+                                    </div>
+                                </div>
+                                <div class="form-group has-success has-feedback">
+                                    <label class="control-label col-sm-3" for="inputGroupSuccess2">Input group with success</label>
+                                    <div class="col-sm-9">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">@</span>
+                                            <input type="text" class="form-control" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
+                                        </div>
+                                        <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                        <span id="inputGroupSuccess2Status" class="sr-only">(Success)</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <label>Inline</label>
+                        <div class="container-fluid">
+                            <form class="form-inline">
+                                <div class="form-group has-success has-feedback">
+                                    <label class="control-label" for="inputSuccess4">Input with Success</label>
+                                    <input type="text" class="form-control" id="inputSuccess4" aria-describedby="inputSuccess4Status">
+                                    <span id="inputSuccess4Status" class="sr-only">(Success)</span>
+                                </div>
+                            </form>
+                            <form class="form-inline">
+                                <div class="form-group has-success has-feedback">
+                                    <label class="control-label" for="inputGroupSuccess3">Input group with Success</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">@</span>
+                                        <input type="text" class="fomr-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccessStatus">
+                                    </div>
+                                    <span class="glyphicon glyphicon-ok form-control-feedback" ara-hidden="true"></span>
+                                    <span id="inputGroupSuccess3Status" class="sr-only">(Success)</span>
+                                </div>
+                            </form>
+                        </div>
+                        <label>Iptional Icons with Tags .sr-only</label>
+                        <div class="container-fluid">
+                            <div class="form-group has-success has-feedback">
+                                <label class="control-label sr-only" for="inputSuccess5">Hidden Label</label>
+                                <input type="text" class="form-control" id="inputSuccess5" aria-describedby="inputSuccess5Status">
+                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span id="inputSuccess5Status" class="sr-only">(Success)</span>
+                            </div>
+                            <div class="form-group has-success has-feedback">
+                                <label class="control-label sr-only" for="inputGroupSuccess4">Input Group With Success</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon">@</span>
+                                    <input type="text" class="form-control" id="inputGroupSuccess4" aria-describedby="inputGroupSuccess4Status">
+                                </div>
+                                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                <span id="inputGroupSuccess4Status" class="sr-only">(Success)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--End of Example 10-->
+                
+                <div class="container-fluid"><!--Example 11: Control Sizing-->
+                    <div class="header-container">
+                        <h1>Control Sizing</h1>
+                    </div>
+                    <div class="container-fluid">
+                        <label>Height Sizing</label>
+                        <input class="form-control input-lg" type="text" placeholder=".input-lg">
+                        <input class="form-control" type="text" placeholder="Default input">
+                        <input class="form-control input-sm" type="text" placeholder=".input-sm">
+                        
+                        <select class="form-control input-lg">
+                            <option>.input-lg</option>
+                        </select>
+                        <select class="form-control">
+                            <option>Default select</option>
+                        </select>
+                        <select class="form-control input-sm">
+                            <option>.input-sm</option>
+                        </select>
+                    </div>
+                    <div class="container-fluid">
+                        <label>Horizontal form group sizes</label>
+                        <form class="form-horizontal">
+                            <div class="form-group form-group-lg">
+                                <label class="col-sm-2 control-label" for="formGroupInputLarge">Large Label</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="text" id="formGroupInputLarge" placeholder="Large Input">
+                                </div>
+                            </div>
+                            <div class="form-group form-group-sm">
+                                <label class="col-sm-2 control-label" for="formGroupInputSmall">Small Label</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Small Input"
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="container-fluid"><!--Column Sizing-->
+                        <label>Column Sizing</label>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div clasS="col-xs-2">
+                                    <input type="text" class="form-control" placeholder=".col-xs-2">
+                                </div>
+                                <div class="col-xs-3">
+                                    <input type="text" class="form-control" placeholder=".col-xs-3">
+                                </div>
+                                <div class="col-xs-4">
+                                    <input type="text" class="form-control" placeholder=".col-xs-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div><!--End of Example 11-->
             </div>
         </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

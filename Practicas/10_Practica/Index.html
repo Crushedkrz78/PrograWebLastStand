@@ -15,7 +15,7 @@
     <body>
         <!--This practice is for create example forms-->
         <div class="container-fluid">
-            <form>
+            <form data-toggle="validator" role="form">
                 <div class="row">
                     <div class="col-xs-4 col-xs-offset-2"><!--Column 1: Main User Data for Register-->
                         <div class="header-container">
@@ -47,7 +47,7 @@
 
                             <div class="form-group"><!--Phone Insertion Form Group-->
                                 <label for="PhoneInput">Teléfono</label>
-                                <input type="text" class="input-medium bfh-phone" data-country="US"><!--This uses external Bootstrap JS files-->
+                                <input type="text" class="form-group">
                             </div>
                             <div class="form-group"><!--Email Insertion Form Group-->
                                 <label for="EmailInput">Correo Electrónico</label>
@@ -73,7 +73,7 @@
         </div>
         <!--..............................................Cheap HTML code division....................................-->
         <div class="container-fluid" id="Second"><!--Second form example-->
-            <form>
+            <form data-toggle="validator" role="form">
                 <div class="row">
                     <div class="col-xs-9 col-xs-offset-1"><!--Form Header-->
                         <div class="header-container">
@@ -201,6 +201,11 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-xs-3 col-xs-offset-2">
+                        <button type="submit" class="btn btn-default">Registro</button>
+                    </div>
+                </div>
             </form>
         </div><!--End of second form example-->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -208,6 +213,8 @@
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
         
+        <!--Boostrap Validator Implementation from: http://1000hz.github.io/bootstrap-validator/-->
+        <script src="js/validator.js"></script>
         <!--The next js files can be found on:  http://js.nicdn.de/bootstrap/formhelpers/docs/phone.html-->
         <script src="js/bootstrap-formhelpers.min.js"></script>
         <script src="js/bootstrap-formhelpers-phone.js"></script><!--Tools for forms-->

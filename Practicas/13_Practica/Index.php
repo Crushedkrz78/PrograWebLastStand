@@ -21,10 +21,15 @@
                             Insert a Text Here
                         </div>
                         <div class="panel-body">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon2">
-                                <span class="input-group-addon" id="basic-addon2">@itcelaya.edu.mx</span>
-                            </div>
+                            <form name="ITCUser" onsubmit="return validateInput()" method="post">
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="submit">Go!</button>
+                                    </span>
+                                    <input name="fuser" type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon2">
+                                    <span class="input-group-addon" id="basic-addon2">@itcelaya.edu.mx</span>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -35,5 +40,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
+        <!--JavaScript Validator Method for one Form Input-->
+        <script src="js/check.js"></script>
     </body>
 </html>

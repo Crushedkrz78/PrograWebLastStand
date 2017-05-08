@@ -1,0 +1,4 @@
+/*
+This files is created for validate that the text inserted
+is suitable for the programmer purposes
+*/

@@ -1,0 +1,11 @@
+2017/05/23 00:52:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "continentes".' in C:\xampp\htdocs\gitPractice1\PrograWebLastStand\Practicas\15_Practica\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\gitPractice1\PrograWebLastStand\Practicas\15_Practica\yii\framework\web\CController.php(270): CController->missingAction('continentes')
+#1 C:\xampp\htdocs\gitPractice1\PrograWebLastStand\Practicas\15_Practica\yii\framework\web\CWebApplication.php(282): CController->run('continentes')
+#2 C:\xampp\htdocs\gitPractice1\PrograWebLastStand\Practicas\15_Practica\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/continente...')
+#3 C:\xampp\htdocs\gitPractice1\PrograWebLastStand\Practicas\15_Practica\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\gitPractice1\PrograWebLastStand\Practicas\15_Practica\proyecto_pw\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/gitPractice1/PrograWebLastStand/Practicas/15_Practica/proyecto_pw/index.php?r=site/continentes
+HTTP_REFERER=http://localhost/gitPractice1/PrograWebLastStand/Practicas/15_Practica/proyecto_pw/index.php?r=site/index
+---

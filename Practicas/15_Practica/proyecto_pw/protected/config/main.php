@@ -11,11 +11,18 @@ return array(
 
 	// preloading 'log' component
 	'preload'=>array('log'),
+    
+    //Path aliases
+    'aliases' => array(
+        'bootstrap' => realpath(__DIR__ . '/../extensions/bootstrap'),
+    ),
 
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+        //Import for Yii Bootstrap
+        'bootstrap.helpers.TbHtml',
 	),
 
 	'modules'=>array(
@@ -26,7 +33,10 @@ return array(
 			'password'=>'Enter Your Password Here',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
+            //Generator Path for Yii Bootstrap
+            'generatorPaths' => array('bootstrap.gii'),
 		),
+        
 		
 	),
 
@@ -37,6 +47,11 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+        
+        //Bootstrap implementation
+        'bootstrap' => array(
+            'class' => 'bootstrap.components.TbApi',
+        ),
 
 		// uncomment the following to enable URLs in path-format
 		/*

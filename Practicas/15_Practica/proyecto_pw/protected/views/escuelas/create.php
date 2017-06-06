@@ -18,6 +18,7 @@ $this->menu=array(
 <?php 
 //$listaMunicipios = Municipios :: model() ->findAll();
 $this->renderPartial('_form', array(
-    'modelEscuelas'=>$modelEscuelas,                                     'listaMunicipios'=>$listaMunicipios
+    'modelEscuelas'=>$modelEscuelas,
+    'listaMunicipios'=>$listaMunicipios
 )); 
 ?>

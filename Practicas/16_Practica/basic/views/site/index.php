@@ -2,50 +2,48 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'Programación Web';
+global $path;
+$path = "http://localhost/gitPractice1/PrograWebLastStand/Practicas/16_Practica/basic/web/index.php?r=";
 ?>
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Congratulations!</h1>
+        <h1>Programación Web</h1>
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
+        <p class="lead">Proyecto 3</p>
+        <h2>¡Bienvenido!</h2>
 
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+        
     </div>
 
     <div class="body-content">
 
         <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+            <div class="col-sm-4">
+                <h2>Geografía</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
+                <div class="list-group">
+                    <a href="<?=$path?>continentes" class="list-group-item">Continentes</a>
+                    <a href="<?=$path?>entidades" class="list-group-item">Entidades</a>
+                    <a href="<?=$path?>municipios" class="list-group-item">Municipios</a>
+                    <a href="<?=$path?>estados" class="list-group-item">Estados</a>
+                    <a href="<?=$path?>localidades" class="list-group-item">Localidades</a>
+                </div>
             </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+            <div class="col-sm-4">
+                <h2>Educación</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
+                <a href="<?=$path?>instituciones" class="list-group-item">Instituciones</a>
+                <a href="<?=$path?>escuelas" class="list-group-item">Escuelas</a>
+                <a href="<?=$path?>subsistemas" class="list-group-item">Subsistemas</a>
+                <a href="<?=$path?>direcciones-coordinaciones" class="list-group-item">Coordinaciones</a>
             </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+            <div class="col-sm-4">
+                <h2>Gobierno</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+                <a href="<?=$path?>gobiernos" class="list-group-item">Gobiernos</a>
+                <a href="<?=$path?>idiomas" class="list-group-item">Idiomas</a>
             </div>
         </div>
 

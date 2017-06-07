@@ -4,15 +4,21 @@
 
 use yii\helpers\Html;
 
-$this->title = 'About';
+$this->title = 'Acerca de...';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-about">
-    <h1><?= Html::encode($this->title) ?></h1>
+    
+    <div class="jumbotron">
+        <h1><?= Html::encode($this->title) ?></h1>
+    </div>
 
     <p>
-        This is the About page. You may modify the following file to customize its content:
+        Proyecto Final: Programación Web, introducción y uso básico del
+        Framework Yii2, mediante vistas diseñadas en Bootstrap.
     </p>
-
-    <code><?= __FILE__ ?></code>
+    
+    <!--The next code line shows local directory to the view file-->
+    <!--<code><?= __FILE__ ?></code>-->
+    <?= __FILE__ ?>
 </div>

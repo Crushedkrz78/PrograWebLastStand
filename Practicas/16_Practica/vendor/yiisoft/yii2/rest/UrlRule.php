@@ -137,7 +137,8 @@ class UrlRule extends CompositeUrlRule
      * will appear as `users` in URLs.
      * @see controller
      */
-    public $pluralize = true;
+    //public $pluralize = true;
+    public $pluralize = false;
 
 
     /**
